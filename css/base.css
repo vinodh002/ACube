@@ -15,3 +15,36 @@
   --dark-blue: #002244;
   --vibrant-blue: #3f00ff;
 }
+
+/* ========Typography========== */
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* ========General layouting============ */
+.logo {
+  height: 80px;
+}
+
+.burger-menu {
+  width: 40px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bar {
+  height: 3px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.bar:nth-child(2) {
+  width: 70%;
+  align-self: flex-end;
+}

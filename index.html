@@ -16,8 +16,9 @@
     <section class="landing-section">
       <!-- Main Header -->
       <header class="main-header">
-        <img src="./imgs/logo-gold.png" alt="Acube logo" class="logo" />
-
+        <div class="logo-container">
+          <img src="./imgs/logo-gold.png" alt="Acube logo" class="logo" />
+        </div>
         <nav class="main-nav">
           <!-- Main Navigation -->
           <!-- --------------- -->
@@ -26,7 +27,13 @@
             <li><a href="#about">About</a></li>
             <li><a href="#courses">Courses</a></li>
             <li><a href="#events">Events</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li>
+              <a
+                href="#http://127.0.0.1:5500/index.html#contact"
+                target="_blank"
+                >Contact</a
+              >
+            </li>
           </ul>
         </nav>
 
@@ -37,40 +44,66 @@
         </div>
       </header>
 
-      <!-- hero section -->
-      <div class="hero-center">
-        <div class="logo-wrapper">
-          <img src="./imgs/hero-img.png" alt="" />
+      <section class="hero">
+        <img src="./imgs/hero-img.png" alt="hero-img" class="hero-img" />
+        <div class="hero-txt">
+          <h1>Learn trending technologies from the ground up</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+            vitae nesciunt quidem similique eius maxime nostrum sed eos tenetur
+            dignissimos!
+          </p>
+          <a href="#" class="btn">Register for free workshop</a>
         </div>
-        <div class="hero-text">
-          <div class="content">
-            <h1>Learn trending technologies from the ground-up</h1>
-            <p>
-              Each expertise was once a beginner. Learn top programming
-              languages or build a career in Web development with the help of
-              young and experienced trainers.<br />
-              Kick start you career now!
-            </p>
-
-            <a href="#" class="register">Register for a free workshop</a>
-
-            <ul class="social-links-list">
-              <li>
-                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-              </li>
-              <li>
-                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
-              </li>
-              <li>
-                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
-              </li>
-              <li>
-                <a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+        <ul class="social-links-list">
+          <li>
+            <a href="https://www.facebook.com/acubemysore/ " target="_blank"
+              ><ion-icon
+                name="logo-facebook"
+                role="img"
+                class="md hydrated"
+                aria-label="logo facebook"
+              ></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://instagram.com/acubemysore?igshid=YmMyMTA2M2Y="
+              target="_blank"
+              ><ion-icon
+                name="logo-instagram"
+                role="img"
+                class="md hydrated"
+                aria-label="logo instagram"
+              ></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https:/twitter.com/ACube_mysore?t=DbGJ4Rw4Id-eNdjG_h8o0w&s=08"
+              target="_blank"
+              ><ion-icon
+                name="logo-twitter"
+                role="img"
+                class="md hydrated"
+                aria-label="logo twitter"
+              ></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://api.whatsapp.com/send/?phone=%2B91&text&app_absent=0"
+              target="_blank"
+              ><ion-icon
+                name="logo-whatsapp"
+                role="img"
+                class="md hydrated"
+                aria-label="logo whatsapp"
+              ></ion-icon
+            ></a>
+          </li>
+        </ul>
+      </section>
     </section>
   </body>
 </html>

@@ -55,7 +55,8 @@ p {
 
 @media screen and (min-width: 700px) {
   .main-header,
-  .hero {
+  .hero,
+  .social-links-list {
     width: 85%;
     margin: 0 auto;
   }

@@ -55,6 +55,20 @@ p {
   margin: 0 auto;
 }
 
+.overlay {
+  height: 100vh;
+  opacity: 0;
+  z-index: -20;
+  background-color: var(--dark-blue);
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+
+.active-overlay {
+  z-index: 9;
+  opacity: 0.95;
+}
 @media screen and (min-width: 700px) {
   .main-header,
   .hero,
@@ -64,8 +78,15 @@ p {
   }
 }
 
+@media screen and (min-width: 850px) {
+  .overlay {
+    display: none;
+  }
+}
+
 .logo {
   height: 80px;
+  z-index: 10;
 }
 
 .burger-menu {
@@ -74,13 +95,16 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  z-index: 10;
 }
 
 .bar {
   height: 3px;
   background-color: #fff;
   border-radius: 10px;
+  transition: all 0.3s;
 }
+
 .bar:nth-child(2) {
   width: 70%;
   align-self: flex-end;

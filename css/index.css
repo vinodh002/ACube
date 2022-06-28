@@ -5,26 +5,28 @@
 .main-nav {
   list-style: none;
   position: fixed;
-
   top: 50%;
   left: 50%;
-  transform: translateX(-300px) translateY(-50%);
-  transition: transform 0.3s;
+  transform: translate(-300px, -50%);
+  opacity: 0;
+  z-index: 10;
+  transition: all 0.3s;
 }
 
-.menu-btn,
-.menu-close {
-  color: white;
-  font-size: 4rem;
-  position: absolute;
-  top: 8vw;
-  right: 8vw;
+.moveInNav {
+  opacity: 1;
+  transform: translate(-50%, -50%);
 }
 
 .main-nav-list {
+  padding: 40px;
   display: flex;
   flex-direction: column;
   gap: 1em;
+  align-items: center;
+  box-shadow: 1px 1px 10px rgba(198, 234, 255, 0.704),
+    -1px -1px 10px rgba(48, 48, 255, 0.734);
+  border-radius: 10px;
 }
 
 /* ==Landing section==== */
@@ -120,6 +122,8 @@
     position: static;
     transform: translateX(0) translateY(0);
     display: block;
+    opacity: 1;
+    
   }
 
   .main-nav-list {
@@ -128,6 +132,8 @@
     width: 600px;
     justify-content: space-between;
     list-style: none;
+    box-shadow:initial;
+    padding: 0;
   }
 
   /* =====Hero===== */

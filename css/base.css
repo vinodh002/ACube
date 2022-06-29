@@ -76,6 +76,18 @@ p {
     width: 85%;
     margin: 0 auto;
   }
+
+  .course-card {
+    min-width: 550px;
+    min-height: 800px;
+    background-color: #232399;
+    position: absolute;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+  }
 }
 
 @media screen and (min-width: 850px) {

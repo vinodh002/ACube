@@ -1,5 +1,7 @@
 .landing-section {
   min-height: 100vh;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .main-nav {
@@ -102,6 +104,59 @@
   color: rgb(223, 223, 223);
 }
 
+/* Section courses */
+section {
+  padding: 10rem 0;
+}
+
+.courses {
+  background-image: linear-gradient(
+    to top,
+    var(--dark-blue),
+    var(--medium-blue)
+  );
+}
+
+.section-title {
+  margin-bottom: 8rem;
+}
+
+.course-slider {
+  overflow: hidden;
+}
+
+.course-slide {
+  max-width: 350px;
+  padding: 2rem;
+  background-color: var(--vibrant-blue);
+  min-height: 450px;
+  border-radius: 15px;
+  text-align: center;
+  transition: all 0.3s;
+  position: absolute;
+  left: 50%;
+}
+
+.course-img {
+  min-height: 250px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 1rem;
+}
+
+.course-title {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.course-slide p {
+  margin-bottom: 1rem;
+}
+
 @media screen and (min-width: 1000px) {
   .landing-section {
     position: relative;
@@ -123,7 +178,6 @@
     transform: translateX(0) translateY(0);
     display: block;
     opacity: 1;
-    
   }
 
   .main-nav-list {
@@ -132,7 +186,7 @@
     width: 600px;
     justify-content: space-between;
     list-style: none;
-    box-shadow:initial;
+    box-shadow: initial;
     padding: 0;
   }
 
@@ -191,5 +245,38 @@
     display: flex;
     align-items: center;
     color: rgb(117, 144, 189);
+  }
+
+  /* Section courses */
+
+  .course-slider {
+  }
+
+  .course-slide {
+    max-width: 650px;
+    min-height: 250px;
+    display: flex;
+    text-align: left;
+  }
+
+  .course-img {
+    height: 100%;
+    width: 45%;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 0;
+    margin-right: 2rem;
+  }
+
+  .course-title {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+  }
+
+  .course-slide p {
+    margin-bottom: 1rem;
   }
 }

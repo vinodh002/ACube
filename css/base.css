@@ -48,6 +48,16 @@ p {
   background-color: var(--vibrant-blue);
   border-radius: 20px;
 }
+
+h2 {
+  color: white;
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 /* ========General layouting============ */
 .main-header,
 .hero {
@@ -77,16 +87,9 @@ p {
     margin: 0 auto;
   }
 
-  .course-card {
-    min-width: 550px;
-    min-height: 800px;
-    background-color: #232399;
-    position: absolute;
-    
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 15px;
+  .why-us ul {
+    margin-left: 4em;
+    min-width: 610px;
   }
 }
 

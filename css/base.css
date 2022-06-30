@@ -18,8 +18,11 @@
   --vibrant-blue: #3f00ff;
 }
 
+html,
 body {
+  position: absolute;
   overflow-x: hidden;
+  width: 100vw;
 }
 
 /* ========Typography========== */

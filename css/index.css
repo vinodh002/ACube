@@ -1,7 +1,11 @@
+html {
+  overflow-x: hidden;
+}
 .landing-section {
   min-height: 100vh;
   padding-top: 0;
   padding-bottom: 0;
+  overflow: hidden;
 }
 
 .main-nav {
@@ -126,7 +130,7 @@ section {
 }
 
 .course-slide {
-  max-width: 350px;
+  width: 350px;
   padding: 2rem;
   background-color: var(--vibrant-blue);
   min-height: 450px;
@@ -253,7 +257,7 @@ section {
   }
 
   .course-slide {
-    max-width: 650px;
+    width: 650px;
     min-height: 250px;
     display: flex;
     text-align: left;

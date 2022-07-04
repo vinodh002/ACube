@@ -91,6 +91,10 @@ h2 {
     margin-left: 4em;
     min-width: 610px;
   }
+  .profile {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 @media screen and (min-width: 850px) {
